@@ -6,6 +6,7 @@ import Photos from './pages/photos';
 import Testimonials from './pages/testimonials';
 import AboutMe from './pages/aboutMe';
 import BuyNow from './pages/buyNow';
+import Aliens from './pages/aliens';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path='/about-me'>
             <AboutMe/>
+          </Route>
+          <Route path='/aliens'>
+            <Aliens/>
           </Route>
           <Route path='/buy-now'>
             <BuyNow/>

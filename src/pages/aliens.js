@@ -2,19 +2,19 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 
-import aboutMe from '../data/aboutMe.json';
+import aliens from '../data/aliens.json';
 
 const style = css`
   padding: 0 40px 0 40px;
 `;
 
-export default function AboutMe(props) {
+export default function Aliens(props) {
 
   return (
     <div css={style}>
-      <h2>{aboutMe.name}</h2>
+      <h2>{aliens.tagline}</h2>
       <p>
-        {aboutMe.body}
+        {aliens.body}
       </p>
     </div>
   );
