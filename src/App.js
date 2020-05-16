@@ -1,9 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './elements/navbar.js';
+import Navbar from './components/navbar.js';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home';
+import Photos from './pages/photos';
+import Testimonials from './pages/testimonials';
+import AboutMe from './pages/aboutMe';
+import BuyNow from './pages/buyNow';
 
 function App() {
   return (
@@ -11,28 +13,24 @@ function App() {
       <Navbar/>
       <main>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Home/>
+          </Route>
+          <Route path='/photos'>
+            <Photos/>
+          </Route>
+          <Route path='/testimonials'>
+            <Testimonials/>
+          </Route>
+          <Route path='/about-me'>
+            <AboutMe/>
+          </Route>
+          <Route path='/buy-now'>
+            <BuyNow/>
           </Route>
         </Switch>
       </main>
     </body>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
