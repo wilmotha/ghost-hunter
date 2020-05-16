@@ -5,6 +5,9 @@ import React from 'react';
 export default function Home(props) {
 
   const styles = css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
         width: 500px;
       }
@@ -12,8 +15,8 @@ export default function Home(props) {
 
   return (
     <div css={styles}>
-      <img src={require('../images/ghostfinder.jpg')} />
       <h3> Welcome to the home of the Ghost Finder</h3>
+      <img src={require('../images/ghostfinder.jpg')} />
     </div>
   );
 }

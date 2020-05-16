@@ -9,7 +9,7 @@ import BuyNow from './pages/buyNow';
 
 function App() {
   return (
-    <body>
+    <>
       <Navbar/>
       <main>
         <Switch>
@@ -30,7 +30,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-    </body>
+    </>
   );
 }
 
