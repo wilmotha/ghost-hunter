@@ -39,8 +39,8 @@ export default function Testimonials(props) {
 
   return (
     <div css={testimonialHolder}>
-      {testimonials.map(testimonial => (
-          <div id='testimonial'>
+      {testimonials.map((testimonial, i) => (
+          <div key={i} id='testimonial'>
             <div id='title'>
                 <h3>{testimonial.name}</h3>
                 <div id="stars">{displayStars(parseInt(testimonial.stars))}</div>
