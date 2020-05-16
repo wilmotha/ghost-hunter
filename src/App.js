@@ -7,6 +7,7 @@ import Testimonials from './pages/testimonials';
 import AboutMe from './pages/aboutMe';
 import BuyNow from './pages/buyNow';
 import Aliens from './pages/aliens';
+import Lost from './pages/lost';
 
 function App() {
   return (
@@ -29,8 +30,11 @@ function App() {
           <Route path='/aliens'>
             <Aliens/>
           </Route>
-          <Route path='/buy-now'>
+          {/* <Route path='/buy-now'>
             <BuyNow/>
+          </Route> */}
+          <Route path="*">
+            <Lost/>
           </Route>
         </Switch>
       </main>
