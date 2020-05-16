@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function Photos(props) {
 
-    return (
-        <div>
-            <h1>Photos</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Photos</h1>
+    </div>
+  );
 }
