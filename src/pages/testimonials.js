@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 
-import testimonials from '../testimonials.json';
+import testimonials from '../data/testimonials.json';
 
 const testimonialHolder = css`
   display: flex;

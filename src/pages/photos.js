@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 
-import images from '../images/images.json';
+import images from '../data/images.json';
 
 const imageHolder = css`
   display: flex;
@@ -35,7 +35,7 @@ export default function Photos(props) {
       {images.map((image, i) => (
         <div key={i}>
           <h3>{image.title}</h3>
-          <img src={require(`../images/${image.path}`)}/>
+          <img src={require(`../${image.path}`)}/>
           <p>{image.comment}</p>
         </div>
       ))}

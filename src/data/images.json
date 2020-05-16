@@ -1,22 +1,22 @@
 [
   {
     "title": "Ghost Finder",
-    "path": "ghostfinder.jpg",
+    "path": "images/ghostfinder.jpg",
     "comment": "This bad boy is the ghost finder"
   },
   {
     "title": "Ghosts Day",
-    "path": "agnes.jpg",
+    "path": "images/agnes.jpg",
     "comment": "As you can see ghosts will even show up in the day"
   },
   {
     "title": "Proof",
-    "path": "cursed.jpg",
+    "path": "images/cursed.jpg",
     "comment": "Show this to anyone who does not belive that this product can find real ghosts"
   },
   {
     "title": "Inner Ghost",
-    "path": "mirror.jpg",
+    "path": "images/mirror.jpg",
     "comment": "This device can even revial the ghost that was inside you all along"
   }
 ]
