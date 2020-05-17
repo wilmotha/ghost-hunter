@@ -1,7 +1,7 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './utils/serviceWorker';
 
@@ -21,10 +21,10 @@ const globalStyles = css`
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
         <Global styles={globalStyles} />
         <App />
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

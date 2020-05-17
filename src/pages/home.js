@@ -18,7 +18,10 @@ export default function Home(props) {
   return (
     <div css={styles}>
       <h3>{data.tagline}</h3>
-      <img src={require(`../${data.photo}`)} />
+      <img src='https://www.indiewire.com/wp-content/uploads/2017/03/screen-shot-2017-03-28-at-8-24-02-am.png?w=780'/>
+      {/* <img src={require(data.alt)}/> */}
+      {/* <img src={require(`../${data.photo}`)}/> */}
+      {/* {console.log("data: ", data)} */}
     </div>
   );
 }

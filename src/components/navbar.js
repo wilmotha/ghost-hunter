@@ -75,6 +75,7 @@ export default function Navbar(props) {
       </div>
       
       <ul css={navlinks}>
+        {/* <NavLink to='/home'> Home </NavLink> */}
         <NavLink to='/photos'> Photos </NavLink>
         <NavLink to='/testimonials'> Testimonials </NavLink>
         <NavLink to='/aliens'> Aliens? </NavLink>
