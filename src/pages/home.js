@@ -22,6 +22,7 @@ export default function Home(props) {
       {/* <img src={require(data.alt)}/> */}
       {/* <img src={require(`../${data.photo}`)}/> */}
       {/* {console.log("data: ", data)} */}
+      <p>The Ghost Finder is the first and only offically Licecend and pantned device for finding and hunting real ghosts. For only $19.99 you can join in on the ghostly crazy that is taking the world by storm.</p>
     </div>
   );
 }
