@@ -13,6 +13,9 @@ export default function Home(props) {
       img {
         width: 500px;
       }
+      p {
+        width: 500px;
+      }
     `;
 
   return (
