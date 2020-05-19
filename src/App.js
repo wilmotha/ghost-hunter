@@ -30,9 +30,9 @@ function App() {
           <Route path='/aliens'>
             <Aliens/>
           </Route>
-          {/* <Route path='/buy-now'>
+          <Route path='/buy-now'>
             <BuyNow/>
-          </Route> */}
+          </Route>
           <Route path="*">
             <Lost/>
           </Route>

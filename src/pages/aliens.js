@@ -6,12 +6,18 @@ import aliens from '../data/aliens.json';
 
 const style = css`
   padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   img {
     width: 100%;
+    max-width: 1000px;
   }
 
   #holder {
     margin-top: 15px;
+    max-width: 1000px;
   }
 `;
 
@@ -20,7 +26,7 @@ export default function Aliens(props) {
   return (
     <div css={style}>
       <h2>{aliens.tagline}</h2>
-      <img src={require('../images/sky.jpg')}/>
+      <img src={require(`../${aliens.photo}`)}/>
       {aliens.body.map(body => (
         <div id="holder">
           {body}

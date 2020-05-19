@@ -6,7 +6,7 @@ import images from '../data/images.json';
 
 const imageHolder = css`
   display: flex;
-  justify-content: space-evenly;
+  ${'' /* justify-content: space-evenly; */}
   flex-wrap: wrap;
   margin: 10px;
 
@@ -17,7 +17,7 @@ const imageHolder = css`
 
   div {
     padding: 10px;
-    margin: 5px;
+    margin: 15px 25px;
     width: 300px;
     background-color: ghostwhite;
     border-radius: 10px;

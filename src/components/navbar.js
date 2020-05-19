@@ -3,6 +3,8 @@ import { jsx, css } from '@emotion/core';
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
+import BuyButton from './buyButton';
+
 const navlinks = css`
   display: flex;
   margin: 0;
@@ -48,19 +50,9 @@ const titlebar = css`
     text-decoration: none;
     color: black;
   }
-
-  #buy-now {
-    padding-top: 20px;
-    padding-right: 10px;
-  }
-  #buy-now a {
-    padding: 10px;
-    text-decoration: none;
-    color: ghostwhite;
-    background-color: crimson;
-    border-radius: 10px;
-  }
 `;
+
+
 
 export default function Navbar(props) {
   return (
@@ -69,9 +61,7 @@ export default function Navbar(props) {
         <h1>
           <Link to='/'>ghost4real.com</Link>
         </h1>
-        <div id="buy-now">
-            <NavLink to='/buy-now'> BUY NOW!!! </NavLink>
-        </div>
+        <BuyButton path='/buy-now' text='BUY NOW!!!'/>
       </div>
       
       <ul css={navlinks}>

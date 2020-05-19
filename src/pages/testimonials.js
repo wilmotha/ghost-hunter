@@ -6,13 +6,13 @@ import testimonials from '../data/testimonials.json';
 
 const testimonialHolder = css`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   flex-wrap: wrap;
   margin: 10px;
 
   #testimonial {
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
     width: 350px;
     background-color: ghostwhite;
     border-radius: 10px;
