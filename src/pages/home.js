@@ -2,30 +2,65 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 
-import data from '../data/home.json';
+import home from '../data/home.json';
+import BuyButton from '../components/buyButton';
+
+const style = css`
+  padding: 0 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+
+
+  #body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  h2 {
+    position: absolute;
+    top: 8px;
+    left: 16px;;
+    ${'' /* transform: translate(-50%, -50%); */}
+    color: ghostwhite;
+  }
+
+  #text-holder {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: ghostwhite;
+  }
+
+  img {
+    width: 100%;
+    ${'' /* max-width: 1000px; */}
+  }
+
+  #text {
+    margin-top: 15px;
+    ${'' /* max-width: 600px; */}
+  }
+`;
 
 export default function Home(props) {
 
-  const styles = css`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      img {
-        width: 500px;
-      }
-      p {
-        width: 500px;
-      }
-    `;
-
   return (
-    <div css={styles}>
-      <h3>{data.tagline}</h3>
-      <img src='https://www.indiewire.com/wp-content/uploads/2017/03/screen-shot-2017-03-28-at-8-24-02-am.png?w=780'/>
-      {/* <img src={require(data.alt)}/> */}
-      {/* <img src={require(`../${data.photo}`)}/> */}
-      {/* {console.log("data: ", data)} */}
-      <p>The Ghost Finder is the first and only offically Licecend and pantned device for finding and hunting real ghosts. For only $19.99 you can join in on the ghostly crazy that is taking the world by storm.</p>
+    <div css={style}>
+      <h2>{home.tagline}</h2>
+      <img src={require(`../${home.photo}`)}/>
+
+      <div id="text-holder">
+        {home.body.map(body => (
+          <div id="text"> 
+            {body}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
