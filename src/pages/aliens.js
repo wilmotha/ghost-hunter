@@ -26,7 +26,7 @@ export default function Aliens(props) {
   return (
     <div css={style}>
       <h2>{aliens ? aliens.tagline : null}</h2>
-      <img src={require(`../${aliens.photo}`)}/>
+      <img src={require(`../${aliens ? aliens.photo : null}`)}/>
       {aliens ? aliens.body.map(body => (
         <div id="holder">
           {body}

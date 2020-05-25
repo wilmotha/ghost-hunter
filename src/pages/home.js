@@ -51,15 +51,15 @@ export default function Home(props) {
 
   return (
     <div css={style}>
-      <h2>{home.tagline}</h2>
-      <img src={require(`../${home.photo}`)}/>
+      <h2>{home ? home.tagline : null}</h2>
+      <img src={require(`../${home ? home.photo : null}`)}/>
 
       <div id="text-holder">
-        {home.body.map(body => (
+        {home ? home.body.map(body => (
           <div id="text"> 
             {body}
           </div>
-        ))}
+        )) : null}
       </div>
     </div>
   );
